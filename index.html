@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="page light-theme">
+    <div class="button__container">
+      <button class="button button__field button--lang" type="button">
+        Сменить язык
+      </button>
+      <button class="button button__field button--theme" type="button">
+        Сменить тему
+      </button>
+    </div>
+
+    <div id="app"></div>
+
+    <script type="text/javascript" src="lang/English.js"></script>
+    <script type="text/javascript" src="lang/Russian.js"></script>
+    <script type="text/javascript" src="lib.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script>
+      let lang = Russian; //эвристика выбора/переключения языка
+      let i18n = getI18n(Data, lang);
+      let html = genHTML(i18n);
+      document.getElementById("app").innerHTML = html;
+
+      let page = document.querySelector(".page");
+      let themeButton = document.querySelector(".button--theme");
+
+      themeButton.onclick = function () {
+        page.classList.toggle("light-theme");
+        page.classList.toggle("dark-theme");
+      };
+    </script>
+  </body>
+</html>

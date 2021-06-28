@@ -1,0 +1,170 @@
+/*basic*/
+.button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button__field {
+  width: 200px;
+  margin: 10px;
+  align-items: center;
+  font-size: 16px;
+  padding: 11px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media (min-width: 1024px) {
+  .form {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+.field__label,
+.legend__field {
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+  padding: 10px 0 10px 0;
+}
+
+.field__input,
+.field__select {
+  align-items: center;
+  font-size: 16px;
+  padding: 11px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  /* border-color: lightgrey; */
+}
+
+.field__textarea {
+  align-items: center;
+  font-size: 16px;
+  padding: 11px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  /* border-color: lightgrey; */
+  resize: none;
+}
+.field__input--button {
+  width: 200px;
+  margin: 20px auto;
+  align-items: center;
+  font-size: 16px;
+  padding: 11px;
+  border: none;
+}
+
+.wrapper__security {
+  padding: 20px;
+}
+
+.wrapper__radio {
+  list-style: none;
+  margin: 20px 0px 20px 0px;
+  padding: 0;
+}
+/*light-theme*/
+
+.light-theme {
+  background-color: white;
+}
+
+.light-theme .field__option,
+.light-theme .field__select {
+  color: grey;
+}
+
+.light-theme .field__input,
+.light-theme .field__textarea,
+.light-theme .field__select {
+  background-color: #edeef0;
+}
+.light-theme textarea,
+.light-theme textarea::placeholder {
+  color: grey;
+}
+
+.light-theme input::placeholder {
+  color: grey;
+}
+
+.light-theme .field__input--date {
+  color: grey;
+}
+
+.light-theme .button__field,
+.light-theme .field__input--button {
+  background-color: #5181b8;
+  color: white;
+}
+.light-theme .button__field:hover,
+.light-theme .field__input--button:hover {
+  background-color: #2d4969;
+}
+
+.light-theme .button__field:active,
+.light-theme .field__input--button:active {
+  background-color: #1b2c40;
+}
+
+/*dark-theme*/
+
+.dark-theme {
+  background-color: #222326;
+}
+
+.dark-theme .field__label,
+.dark-theme .legend__field {
+  color: white;
+}
+.dark-theme .field__input,
+.dark-theme .field__select,
+.dark-theme .field__textarea {
+  background-color: #444446;
+}
+
+.dark-theme .button__field,
+.dark-theme .field__input--button {
+  background-color: #444446;
+  color: white;
+}
+.dark-theme .button__field:hover,
+.dark-theme .field__input--button:hover {
+  background-color: #20091f;
+}
+
+.dark-theme .button__field:active,
+.dark-theme .field__input--button:active {
+  background-color: #060207;
+}
+
+.dark-theme .field__option,
+.dark-theme .field__select {
+  color: white;
+}
+.dark-theme .field__textarea,
+.dark-theme .field__textarea::placeholder {
+  color: white;
+}
+
+.dark-theme .field__input::placeholder {
+  color: white;
+}
+
+.dark-theme .field__input--date {
+  color: white;
+}

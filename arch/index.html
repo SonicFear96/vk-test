@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>it's header</header>
+    <main>
+      <form action="www.example.com" method="post">
+        <label for="name-user">Ваше имя:</label>
+        <input id="name-user" type="text" name="name" placeholder="Имя" />
+        <label for="surname-user">Ваша фамилия:</label
+        ><input
+          id="surname-user"
+          type="text"
+          name="surname"
+          placeholder="Фамилия"
+        />
+        <label for="date">Дата рождения: </label>
+        <input type="date" id="date" name="date" />
+        <label for="tel">Ваш номер телефона</label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+          placeholder="Формат номера X-XXX-XXX"
+        />
+        <label for="mail">Ваш e-mail:</label>
+        <input
+          id="mail-user"
+          type="email"
+          name="mail"
+          placeholder="email@example.com"
+        />
+        <label>
+          <input type="radio" name="question" value="1" cheked /> 1 раз в неделю
+        </label>
+        <label>
+          <input type="radio" name="question" value="2" />
+          2 раза в неделю
+        </label>
+        <label>
+          <input type="radio" name="question" value="3" />
+          3 раза в неделю
+        </label>
+        <label for="education">Ваше образование</label>
+        <select id="education" name="education">
+          <option value="school">Среднее образование</option>
+          <option value="college">Средне-специальное</option>
+          <option value="not-high">Незаконченное высшее</option>
+          <option value="high">Высшее</option>
+        </select>
+        <label>Расскажите о себе кратко</label>
+        <textarea
+          name="comment"
+          id="comment-field"
+          placeholder="В свободной   форме"
+        >
+        </textarea>
+        <input type="submit" value="Отправить" />
+      </form>
+    </main>
+    <footer>it's footer</footer>
+  </body>
+  <script src="script.js"></script>
+</html>
